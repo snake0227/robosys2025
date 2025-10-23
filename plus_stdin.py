@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+#SPDX=FilecopyrightText:2025 Daichi Utsugi
 import sys
 
 ans = 0
