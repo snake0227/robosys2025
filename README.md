@@ -2,5 +2,5 @@
 -このソフトウェアパッケージは、３条項ＢＳＤライセンスの下、再頒布および使用が許可されます。
 -このパッケージは、Ryuichi Ueda由来のコード(©　２０２５ Hoge Fuge)を利用しています。
 -このパッケージのコードは、下記のスライド(CC-BY-SA 4.0 by Ryuichi Ueda)のものを、本人の許可を得て自身の著作としたものです。
-  -[ryuichiued/my_slides robosys_2025] (https://github.com/ryuichiueda/my_slides_marp/tree/master/prob_robotics_2025)
+  -[ryuichiued/my_slides robosys_2025] (https://github.com/ryuichiueda/slides_marp/tree/master/prob_robotics_2025)
 -©　２０２５　Daichi Utsugi
