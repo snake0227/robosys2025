@@ -30,7 +30,6 @@ h = float(sys.stdin.readline()) / 1000 #全高
 min_h = float(sys.stdin.readline()) / 1000 #最低地上高
 
 if ps <= 0 or engine_rpm <= 0 or m <= 0 or fd <= 0 or md <= 0 or w <= 0 or h <= 0 or min_h <= 0:
-    print(file=sys.stderr)
     sys.exit(1)
 
 Crr = 0.015 #転がり抵抗係数(初期値)
