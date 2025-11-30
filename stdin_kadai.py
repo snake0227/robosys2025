@@ -54,9 +54,4 @@ else:
 
 v, t, Cr, F_drive, Ar, Front_area, Air_density = result
 
-print(f"最高速: {v:.2f} km/h")
-print(f"トルク: {t:.2f} Nm")
-print(f"転がり抵抗: {Cr:.2f} N")
-print(f"駆動力: {F_drive:.2f} N")
-print(f"空気抵抗: {Ar:.2f} N")
-print(f"前面投影面積: {Front_area:.2f}m^2")
+print(f"{v:.2f} km/h")
