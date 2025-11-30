@@ -18,4 +18,8 @@
   -このパッケージは、Ryuichi Ueda由来のコード(© 2025 Hoge Fuge)を利用しています。
   -このパッケージのコードは、下記のスライド(CC-BY-SA 4.0 by Ryuichi Ueda)のものを、本人の許可を得て自身の著作としたものです。
     -[ryuichiueda/my_slides robosys_2025] (https://github.com/ryuichiueda/slides_marp/tree/master/prob_robotics_2025)
+  参考資料と計算ロジック
+  本プログラムの最高速計算ロジックは、以下の資料・ウェブサイトを参考にしています。
+    URL: https://www.team-ash.jp/maxspeed.html
+    参考箇所　最高速の計算式、空気抵抗の計算式、駆動力の計算式、転がり抵抗の計算式、速度別の転がり抵抗係数、速度別の動荷重半径
   -©　2025 Daichi Utsugi
