@@ -8,14 +8,45 @@ ng(){
 
 res=0
 
-out=$(seq 5 | ./plus)
-[ "${out}" = 15 ] || ng "$LINENO"
+out=$(echo -e '235\n 7000\n 1270\n 4.100\n 0.767\n 1775\n 1280\n 130\n' | ./stdin_kadai.py)
+[ "${out}" = '284.69 km/h' ] || ng "$LINENO"
 
-out=$(echo あ | ./plus)
+out=$(echo -e '150\n 6000\n 1000\n 3.909\n 0.582\n 2300\n 1580\n 200\n' | ./stdin_kadai.py)
+[ "${out}" = '167.38 km/h' ] || ng "$LINENO"
+
+out=$(echo -e '-150\n 6000\n 1000\n 3.909\n 0.582\n 2300\n 1580\n 200\n' | ./stdin_kadai.py)
 [ "$?" = 1 ] || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
-out=$(echo | ./plus)
+out=$(echo -e '150\n 0\n 1000\n 3.909\n 0.582\n 2300\n 1580\n 200\n' | ./stdin_kadai.py)
+[ "$?" = 1 ] || ng "$LINENO"
+[ "${out}" = "" ] || ng "$LINENO"
+
+out=$(echo -e '150\n 6000\n 1000\n \n 0.582\n 2300\n 1580\n 200\n' | ./stdin_kadai.py)
+[ "$?" = 1 ] || ng "$LINENO"
+[ "${out}" = "" ] || ng "$LINENO"
+
+out=$(echo -e '150\n 6000\n -1567669\n 3.909\n 0.582\n 2300\n 1580\n 200\n' | ./stdin_kadai.py)
+[ "$?" = 1 ] || ng "$LINENO"
+[ "${out}" = "" ] || ng "$LINENO"
+
+out=$(echo -e '150\n 6000\n 1000\n -0.590\n 0.582\n 2300\n 1580\n 200\n' | ./stdin_kadai.py)
+[ "$?" = 1 ] || ng "$LINENO"
+[ "${out}" = "" ] || ng "$LINENO"
+
+out=$(echo -e '-150\n 6000\n 1000\n 3.909\n 0.582\n 2300\n 1580\n 200\n' | ./stdin_kadai.py)
+[ "$?" = 1 ] || ng "$LINENO"
+[ "${out}" = "" ] || ng "$LINENO"
+
+out=$(echo あ | ./stdin_kadai.py)
+[ "$?" = 1 ] || ng "$LINENO"
+[ "${out}" = "" ] || ng "$LINENO"
+
+out=$(echo -e '235\n あ\n  \n' | ./stdin_kadai.py)
+[ "$?" = 1 ] || ng "$LINENO"
+[ "${out}" = "" ] || ng "$LINENO"
+
+out=$(echo | ./stdin_kadai.py)
 [ "$?" = 1 ] || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
