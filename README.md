@@ -1,6 +1,6 @@
 ## robosys2025
   ロボットシステム学課題1
-# stdin_kadaiコマンド
+#stdin_kadaiコマンド
 ![test](https://github.com/snake0227/robosys2025/actions/workflows/test.yml/badge.svg)
 
   自動車の最高速を計算するコマンド
